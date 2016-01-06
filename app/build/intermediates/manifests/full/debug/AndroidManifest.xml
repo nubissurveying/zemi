@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nubisZemi"
+    android:versionCode="1"
+    android:versionName="1.14" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="10" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.nubisZemi.NubisApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <receiver
+            android:name="com.nubisZemi.NubisBootStart"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.nubisZemi.NubisMain"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nubisZemi.NubisQuestions"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_questions"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nubisZemi.NubisMain" />
+        </activity>
+        <activity
+            android:name="com.nubisZemi.NubisPicture"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_picture"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.nubisZemi.NubisAlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.nubisZemi.NubisLogs"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_settings"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nubisZemi.NubisMain" />
+        </activity>
+        <activity
+            android:name="com.nubisZemi.NubisOpenEnded"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_open_ended"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nubisZemi.NubisMain" />
+        </activity>
+        <activity
+            android:name="com.nubisZemi.NubisAlarmAlert"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_alarm_alert"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nubisZemi.NubisSettings"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_nubis_settings"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nubisZemi.NubisMain" />
+        </activity>
+    </application>
+
+</manifest>

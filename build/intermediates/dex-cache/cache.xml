@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/basweerman/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/basweerman/StudioProjects/NubisZemi/app/build/intermediates/pre-dexed/debug/gson-2.2.4-3dbc36f6c9d8ab0bc678f46a1af4017d515a64a9.jar" />
+    </item>
+    <item
+        jar="/home/basweerman/StudioProjects/NubisZemi/app/libs/commons-codec-1.9.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9ce04e34240f674bc72680f8b843b1457383161a">
+        <dex dex="/home/basweerman/StudioProjects/NubisZemi/app/build/intermediates/pre-dexed/debug/commons-codec-1.9-f0a3602735cc3cdc875f0b90f6699c39e2b1a4f1.jar" />
+    </item>
+    <item
+        jar="/home/basweerman/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/basweerman/StudioProjects/NubisZemi/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-9422409ef512834f6b87b022f0baa324feeb3500.jar" />
+    </item>
+
+</items>

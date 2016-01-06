@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/NubisWhite"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NubisSettings" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" >
+
+                <Button
+                    android:id="@+id/uploadDataButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Upload all data"
+                    android:textColor="@color/NubisWhite"
+                    android:width="10dp" />
+
+                <Button
+                    android:id="@+id/testQuestionButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Test Questions"
+                    android:textColor="@color/NubisWhite"
+                    android:width="120dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/logsButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Update/Log"
+                    android:textColor="@color/NubisWhite" />
+
+                <Button
+                    android:id="@+id/testCortisolButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Test Cortisol"
+                    android:textColor="@color/NubisWhite" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/serverButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="  Server address "
+                    android:textColor="@color/NubisWhite" />
+
+                <Button
+                    android:id="@+id/resetSettingsButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Reset"
+                    android:textColor="@color/NubisWhite" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/settingsSendLogButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Send Log"
+                    android:textColor="@color/NubisWhite" />
+
+                <Button
+                    android:id="@+id/settingsCloseButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/nubis_buttons"
+                    android:padding="12dp"
+                    android:text="Close"
+                    android:textColor="@color/NubisWhite" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/updateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="14"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/NubisBlack"
+            android:textSize="11dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

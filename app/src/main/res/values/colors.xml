@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="NubisBlue">#5691ea</color>
+    <color name="NubisWhite">#FFFFFF</color>
+    <color name="NubisBlack">#000000</color>
+    <color name="NubisBlueInactive">#c7d6ed</color>
+    <color name="NubisBluePressed">#8cb3ef</color>
+    <color name="NubisGreen">#35631e</color>
+    <color name="NubisOrange">#ffb02a</color>
+    <color name="NubisRed">#8a0000</color>
+    <color name="NubisGray">#CCCCCC</color>
+    
+    
+</resources>
